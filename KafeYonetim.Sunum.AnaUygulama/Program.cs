@@ -69,6 +69,26 @@ namespace KafeYonetim.Sunum.AnaUygulama
 
             CalisanListesiniEkranaYazdir(calisanlar);
 
+
+            int toplamSayfaSayisi = DataManager.FiltreliCalisanSayfaSayisiniGetir(metin);
+            int sayfaNumarasi = 1;
+
+            while (true)
+            {
+                CalisanListesiniEkranaYazdir(calisanlar);
+
+                Console.WriteLine($"Sayfa: {sayfaNumarasi}/{toplamSayfaSayisi}");
+
+                sayfaNumarasi = SayfaNumarasiniOku(toplamSayfaSayisi);
+
+                if (sayfaNumarasi == -5484)
+                {
+                    return;
+                }
+
+                calisanlar = DataManager.CalisanListesiniIsmeGoreFiltrele(metin, sayfaNumarasi);
+            }
+
             Console.Read();
         }
 

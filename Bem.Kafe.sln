@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{31A77F07-3678-40E0-B1E4-5BD6B6CC0509}"
 	ProjectSection(SolutionItems) = preProject
 		CalisanSayfaSayisiHesapla.sql = CalisanSayfaSayisiHesapla.sql
+		FiltreliCalisanSayfaSayisiHesapla.sql = FiltreliCalisanSayfaSayisiHesapla.sql
+		SayfaSayisinaGoreFiltreliCalisanGetir.sql = SayfaSayisinaGoreFiltreliCalisanGetir.sql
 		SayfaSayisinaGoreCalisanGetir.sql = SayfaSayisinaGoreCalisanGetir.sql
 	EndProjectSection
 EndProject
